@@ -6,16 +6,25 @@ var inputs = document.querySelectorAll('input');
 
 function Controler(){
   
-    var val = this.value;
-    console.log(this.name);
+    // var val = "";
+    // // console.log(this.name);
+    // // console.log(this.value);
   
-    if(!(val.charAt(0) === "#")){
+    // if(!(val.charAt(0) === "#")){
       
-        val = this.value+"px";
+    //     val = "px";
+    //   //  console.log(val);
 
-    }
+    // }
 
-    document.querySelector('img').style.setProperty(`--${this.name}` ,this.value);
+    const suffix = this.dataset.sizing || '';
+   // console.log(suffix);
+    
+    console.log(`--${this.name}` ,this.value+suffix);
+   // document.querySelector('img').style.setProperty(`--${this.name}` ,this.value+val);
+    document.querySelector('img').style.setProperty(`--${this.name}` ,this.value+suffix);
+    document.querySelector('.js').style.setProperty(`--${this.name}` ,this.value);
+    
    // element.style.setProperty(property, value)
 
 }

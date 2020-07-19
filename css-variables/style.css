@@ -21,6 +21,10 @@ img{
 
 }
 
+.js{
+    color: var(--Color);
+}
+
 .controls {
     margin-bottom: 30px;
 }
