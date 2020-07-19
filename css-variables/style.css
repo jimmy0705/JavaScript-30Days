@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #8ca4a4;
+    color: white;
+}
+
+:root{
+ --Color:#f1f52d;
+ --Spacing:10px;
+ --Blur:10px;
+
+
+}
+
+img{
+  background-color: var(--Color);
+  padding: var(--Spacing);
+  filter: blur(var(--Blur)) ;
+
+
+}
+
+.controls {
+    margin-bottom: 30px;
+}
